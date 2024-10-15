@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+    <link rel="stylesheet" href="gall.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-brand">Image Gallery</div>
+        <ul class="navbar-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Upload</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search images..." onkeyup="filterImages()">
+    </div>
+
+    <!-- Masonry Grid Gallery -->
+    <div class="masonry-grid">
+        <!-- Add 20 images here in the gallery grid -->
+        <div class="masonry-item" onclick="openLightbox('images/image1.jpg')">
+            <img src="frida-lannerstrom-psSssJl50lg-unsplash.jpg" alt="Image 1">
+        </div>
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="fujiphilm-h2xG7FQbmcI-unsplash.jpg" alt="Image 2">
+        </div>
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="tianshu-liu-aqZ3UAjs_M4-unsplash.jpg" alt="Image 2">
+        </div>
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="mg-cthu--1h_NN3nqzI-unsplash.jpg" alt="Image 2">
+        </div>
+
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="pexels-eberhardgross-1624496.jpg" alt="Image 2">
+        </div>
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="lucas-k-wQLAGv4_OYs-unsplash.jpg" alt="Image 2">
+        </div>
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="pexels-eberhardgross-1366919.jpg" alt="Image 2">
+        </div>
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="pexels-maxfrancis-2246476.jpg" alt="Image 2">
+        </div>
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="braden-jarvis-prSogOoFmkw-unsplash.jpg" alt="Image 2">
+        </div>
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="pexels-no-name-14543-66997.jpg" alt="Image 2">
+        </div>
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="lesly-juarez-1AhGNGKuhR0-unsplash.jpg" alt="Image 2">
+        </div>
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="pexels-pixabay-33109.jpg" alt="Image 2">
+        </div>
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="roberto-h-qToVxSYXPYU-unsplash.jpg" alt="Image 2">
+        </div>
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="pexels-pok-rie-33563-2049422.jpg" alt="Image 2">
+        </div>
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="pexels-sohi-807598.jpg" alt="Image 2">
+        </div> <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="pexels-eberhardgross-1366919.jpg" alt="Image 2">
+        </div>
+
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="tianshu-liu-aqZ3UAjs_M4-unsplash.jpg" alt="Image 2">
+        </div>
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="luke-tanis-IPRFX7CVVoU-unsplash.jpg" alt="Image 2">
+        </div>
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="chris-curry-D5Dpj2YFlZM-unsplash.jpg" alt="Image 2">
+        </div>
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="jason-leung-T844CLUxqvE-unsplash.jpg" alt="Image 2">
+        </div>
+        <div class="masonry-item" onclick="openLightbox('images/image2.jpg')">
+            <img src="leohoho-y3dtKFu0gKY-unsplash.jpg" alt="Image 2">
+        </div>
+        <!-- Repeat for all 20 images -->
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="full-image">
+        <button class="fullscreen-btn" onclick="toggleFullScreen(event)">Full Screen</button>
+    </div>
+
+    <script src="gall.js"></script>
+</body>
+</html>
